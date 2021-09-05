@@ -42,7 +42,7 @@ Core/Src/rtc.c \
 Core/Src/sys.c \
 Core/Src/stm32f4xx_it.c \
 Core/Src/stm32f4xx_hal_msp.c \
-Core/Src/key.c \
+#Core/Src/key.c \
 Core/Src/hid_bootloader.c \
 USB_DEVICE/App/usb_device.c \
 USB_DEVICE/App/usbd_desc.c \
@@ -207,7 +207,7 @@ $(BUILD_DIR):
 # clean up
 #######################################
 clean:
-	-rm -fR $(BUILD_DIR)
+	del $(BUILD_DIR)
   
 #######################################
 # dependencies
